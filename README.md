@@ -4,7 +4,7 @@ local UserInputService = game:GetService("UserInputService");
 ```
 ## Library
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/lates-lib/main/Main.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/jann205/ui/refs/heads/main/Source.lua)"))()
 ```
 
 ## Window
