@@ -3,9 +3,12 @@
 local UserInputService = game:GetService("UserInputService");
 ```
 ## Library
+```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lxte/lates-lib/main/Main.lua"))()
+```
 
 ## Window
+```lua
 local Window = Library:CreateWindow({
 	Title = "???",
 	Theme = "Dark",
@@ -14,28 +17,38 @@ local Window = Library:CreateWindow({
 	Blurring = true,
 	MinimizeKeybind = Enum.KeyCode.LeftAlt,
 })
+```
 
 ## Theme
+```lua
 Window:SetTheme(Themes.Dark)
+```
 
 ## Tab
+```lua
 local Main = Window:AddTab({
 	Title = "Main",
 	Section = "Main",
 	Icon = "rbxassetid://"
 })
+```
 
 ## Section
+```lua
 Window:AddSection({ Name = "Non Interactable"})
+```
 
 ## Paragraph
+```lua
 Window:AddParagraph({
 	Title = "Paragraph",
 	Description = "Insert any important text here.",
 	Tab = Main
 }) 
+```
 
 ## Button
+```lua
 Window:AddButton({
 	Title = "Button",
 	Description = "I wonder what this does",
@@ -48,8 +61,10 @@ Window:AddButton({
 		})
 	end,
 })
+```
 
 ## Toggle
+```lua
 Window:AddToggle({
 	Title = "Toggle",
 	Description = "Switching",
@@ -58,8 +73,10 @@ Window:AddToggle({
 		warn(Boolean);
 	end,
 })
+```
 
 ## Slider
+```lua
 Window:AddSlider({
 	Title = "Slider",
 	Description = "Sliding",
@@ -69,8 +86,10 @@ Window:AddSlider({
 		warn(Amount);
 	end,
 })
+```
 
 ## Dropdown
+```lua
 Window:AddDropdown({
 	Title = "Dropdown",
 	Description = "Selecting",
@@ -84,8 +103,10 @@ Window:AddDropdown({
 		warn(Number);
 	end,
 })
+```
 
 ## Input
+```lua
 Window:AddInput({
 	Title = "Input",
 	Description = "Typing",
@@ -94,8 +115,10 @@ Window:AddInput({
 		warn(Text);
 	end,
 })
+```
 
 ## Keybind
+```lua
 Window:AddKeybind({
 	Title = "Keybind",
 	Description = "Binding",
@@ -104,3 +127,4 @@ Window:AddKeybind({
 		warn("Key Set")
 	end,
 })
+```
